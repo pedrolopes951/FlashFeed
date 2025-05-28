@@ -1,0 +1,4 @@
+build/
+deprecated/
+.vscode/
+API_KEY.txt

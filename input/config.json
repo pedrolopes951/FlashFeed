@@ -1,0 +1,27 @@
+{
+  "logging": {
+    "log_file_path": "market_data_log.txt"
+  },
+  "server": {
+    "port": 8080,
+    "api_key": "YOUR_ALPHA_VANTAGE_API_KEY_HERE",
+    "api_refresh_seconds": 60,       "_comment": "Interval to fetch new data",
+    "api_host": "www.alphavantage.co",
+    "api_base_path": "/query",
+    "api_function": "TIME_SERIES_INTRADAY",
+    "api_interval": "1min",
+    "symbols": [
+      "AAPL",
+      "MSFT",
+      "GOOGL"
+    ],
+    "csv_fallback_paths": {
+      "AAPL": "data/market_data_AAPL.csv",
+      "MSFT": "data/market_data_MSFT.csv",
+      "GOOGL": "data/market_data_GOOGL.csv"
+    }
+  },
+  "client": {
+    "server_address": "127.0.0.1"
+  }
+}
